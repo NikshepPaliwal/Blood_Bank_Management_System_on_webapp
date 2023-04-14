@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+}
+
+#body_1 {
+    height: 145vh;
+    width: 40vw;
+    background-color:rgba(244, 224, 224, 0.999);
+    margin-top: 30px;
+    margin-left: 30vw;
+    padding-left: 5vw;
+    padding-top: 5vh;
+    border-radius: 8px;
+    border: 3px solid black;
+}
+
+.para {
+    text-align: left;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input {
+    width: 25vw;
+    height: 5vh;
+    border-radius: 8px;
+    border: 3px solid black;
+    font-size: 18px;
+    padding-left: 8px;
+    color: black;
+    
+}
+
+#alpha {
+    text-align: center;
+}
+
+input::placeholder {
+    font-size: 18px;
+}
+
+select {
+    width: 25vw;
+    height: 5vh;
+    border: 3px solid black;
+    border-radius: 8px;
+}
+
+button {
+    width: 10vw;
+    height: 5vh;
+    border: 3px solid black;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: greenyellow;
+}
+
+#Add {
+    margin-top: 5px;
+}
+
+hr {
+    margin-top: 80px;
+}
+    #btn{
+        margin-top: 5vh;
+        width:10vw;
+        height: 4vh;
+        margin-left: 10vh;
+    }

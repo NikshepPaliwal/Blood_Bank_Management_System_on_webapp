@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="panel panel-danger">
+        <div class="panel-heading">Search Blood Stock</div>
+        <div class="panel-body">
+          
+        
+      <div class="row">
+      </div>
+      <div class="row">
+      <!-- <div class="col-xs-1" align="left"> -->
+      <!-- <h5>State: </h5> -->
+      <!-- </div>	 -->
+      
+      
+      <div class="col-md-3">
+      <!--  <label for="salutation">State: </label> -->
+      <select name="stateCode" onchange="loadDistrictList(this.value)" class="form-control" id="stateCode"><option value="-1">Select State</option>
+                          <option value="-2">All</option>
+                          
+                              <option value="35">Andaman &amp; Nicobar Islands</option>
+      <option value="28">Andhra Pradesh</option>
+      <option value="12">Arunachal Pradesh</option>
+      <option value="18">Assam</option>
+      <option value="10">Bihar</option>
+      <option value="94">Chandigarh</option>
+      <option value="22">Chhattisgarh</option>
+      <option value="26">Dadra &amp; Nagar Haveli</option>
+      <option value="25">Daman &amp; Diu</option>
+      <option value="97">Delhi</option>
+      <option value="30">Goa</option>
+      <option value="24">Gujarat</option>
+      <option value="96">Haryana</option>
+      <option value="92">Himachal Pradesh</option>
+      <option value="91">Jammu and Kashmir</option>
+      <option value="20">Jharkhand</option>
+      <option value="29">Karnataka</option>
+      <option value="32">Kerala</option>
+      <option value="37">Ladakh</option>
+      <option value="31">Lakshadweep</option>
+      <option value="23">Madhya Pradesh</option>
+      <option value="27">Maharashtra</option>
+      <option value="14">Manipur</option>
+      <option value="17">Meghalaya</option>
+      <option value="15">Mizoram</option>
+      <option value="13">Nagaland</option>
+      <option value="21">Odisha</option>
+      <option value="34">Puducherry</option>
+      <option value="93">Punjab</option>
+      <option value="98">Rajasthan</option>
+      <option value="11">Sikkim</option>
+      <option value="33">Tamil Nadu</option>
+      <option value="36">Telangana</option>
+      <option value="16">Tripura</option>
+      <option value="95">Uttarakhand</option>
+      <option value="99">Uttar Pradesh</option>
+      <option value="19">West Bengal</option></select>
+      </div>			 
+      
+      <div class="col-md-3 lineseparator">
+      <!--  <label for="salutation">District: </label> -->
+      <select id="distList" class="form-control" onchange="setDistrictCode(this.value)">
+      <option value="-1">Select District</option>
+      <option value="146">Agra</option><option value="143">Aligarh</option><option value="178">Ambedkar Nagar</option><option value="734">Amethi</option><option value="670">Amroha</option><option value="162">Auraiya</option><option value="177">Ayodhya</option><option value="191">Azamgarh</option><option value="139">Baghpat</option><option value="180">Bahraich</option><option value="193">Ballia</option><option value="182">Balrampur</option><option value="170">Banda</option><option value="176">Bara Banki</option><option value="150">Bareilly</option><option value="185">Basti</option><option value="134">Bijnor</option><option value="149">Budaun</option><option value="142">Bulandshahr</option><option value="196">Chandauli</option><option value="171">Chitrakoot</option><option value="190">Deoria</option><option value="201">Etah</option><option value="161">Etawah</option><option value="159">Farrukhabad</option><option value="172">Fatehpur</option><option value="147">Firozabad</option><option value="141">Gautam Buddha Nagar</option><option value="140">Ghaziabad</option><option value="195">Ghazipur</option><option value="183">Gonda</option><option value="188">Gorakhpur</option><option value="168">Hamirpur</option><option value="801">Hapur</option><option value="155">Hardoi</option><option value="675">Hathras</option><option value="165">Jalaun</option><option value="194">Jaunpur</option><option value="166">Jhansi</option><option value="160">Kannauj</option><option value="163">Kanpur Dehat</option><option value="164">Kanpur Nagar</option><option value="202">Kanshiram Nagar</option><option value="174">Kaushambi</option><option value="189">Kushinagar</option><option value="153">Lakhimpur Kheri</option><option value="167">Lalitpur</option><option value="157">Lucknow</option><option value="187">Maharajganj</option><option value="169">Mahoba</option><option value="148">Mainpuri</option><option value="145">Mathura</option><option value="192">Mau</option><option value="138">Meerut</option><option value="199">Mirzapur</option><option value="135">Moradabad</option><option value="133">Muzaffarnagar</option><option value="151">Pilibhit</option><option value="173">Pratapgarh</option><option value="175">Prayagraj</option><option value="158">Raebareli</option><option value="136">Rampur</option><option value="132">Saharanpur</option><option value="802">Sambhal</option><option value="186">Sant Kabir Nagar</option><option value="198">Sant Ravidas Nagar (Bhadohi)</option><option value="152">Shahjahanpur</option><option value="672">Shamli</option><option value="181">Shravasti</option><option value="184">Siddharthnagar</option><option value="154">Sitapur</option><option value="200">Sonbhadra</option><option value="179">Sultanpur</option><option value="156">Unnao</option><option value="197">Varanasi</option></select>
+      </div>
+      
+      <!-- <div class="col-md-4 lineseparator">
+      <input type="text" class="form-control" id="txtBbname" placeholder="Blood Bank or Hospital Name">
+      </div>
+       Uncomment this to enable search via BB Name-->
+       
+      <div class="col-md-0">
+      <!-- <div class="input-group">
+      <input type="text" class="form-control" id="autocomplete" onFocus="geolocate()" placeholder="Location">
+      <div class="input-group-append">
+         <span class="input-group-addon" > <button class='btn btn-danger' onclick="getLocation()"><i class="fa  fa-dot-circle-o danger-text"></i></button></span>
+        </div>
+      </div> -->
+      
+      <!-- <div class="input-group">
+      <input type="text" class="form-control" id="autocomplete" onFocus="geolocate()" placeholder="Location">
+        <span style="margin: 0px;padding: 0px;" title="Search Nearby" class="input-group-addon" id="basic-addon2"> <button class='btn btn-danger' onclick="getLocation()"><i class="fa  fa-dot-circle-o danger-text"></i></button></span>
+      </div> -->
+      
+      </div>
+      
+      <div class="col-md-3">
+      <select name="bloodGroupType" onchange="resetComponent(this.value)" class="form-control" id="bgType"><option value="-1">Select Blood Group</option> 
+                                     
+                                       <option value="18">AB-Ve</option>
+      <option value="17">AB+Ve</option>
+      <option value="12">A-Ve</option>
+      <option value="11">A+Ve</option>
+      <option value="14">B-Ve</option>
+      <option value="13">B+Ve</option>
+      <option value="23">Oh-VE</option>
+      <option value="22">Oh+VE</option>
+      <option value="16">O-Ve</option>
+      <option value="15">O+Ve</option>
+      <option value="all">All Blood Groups</option></select> 
+      </div>
+      
+      <div class="col-md-3">
+      
+      <select name="bloodComponentType" onchange="componentSelected(this.value)" class="form-control" id="bcType"><option value="-1">Select Blood Component</option> 
+                                     
+                                       <option value="11">Whole Blood</option>
+      <option value="14">Single Donor Platelet</option>
+      <option value="18">Single Donor Plasma</option>
+      <option value="28">Sagm Packed Red Blood Cells</option>
+      <option value="16">Platelet Rich Plasma</option>
+      <option value="15">Platelet Poor Plasma</option>
+      <option value="20">Platelet Concentrate</option>
+      <option value="19">Plasma</option>
+      <option value="12">Packed Red Blood Cells</option>
+      <option value="30">Leukoreduced Rbc</option>
+      <option value="29">Irradiated RBC</option>
+      <option value="13">Fresh Frozen Plasma</option>
+      <option value="17">Cryoprecipitate</option>
+      <option value="21">Cryo Poor Plasma</option></select> 
+      
+      
+      </div>
+      
+      <br>
+      <br>
+      
+      </div>
+      </div>
+      </div>
+</body>
+</html>

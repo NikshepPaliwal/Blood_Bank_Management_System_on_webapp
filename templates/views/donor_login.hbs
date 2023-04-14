@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donor Login</title>
+  <link rel="stylesheet" href="css/home.css">
+</head>
+<style>
+
+  
+        * {
+    box-sizing: border-box;
+  }
+  body{
+    background-color: white;
+    background-color: transparent;
+  }
+
+  .icon {
+    display: flex;
+    color: white;
+    padding-top: 1.5%;
+  }
+
+  ul li {
+    float: left;
+    display: flex;
+    padding-left: 30px;
+    margin-left: 35px;
+    margin-top: 10px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  li a {
+    color: white;
+  }
+
+  li a:hover {
+    color: rgb(38, 182, 182);
+    font-family: Arial;
+    font-weight: bold;
+  }
+
+  .main {
+    background-color:rgba(224, 154, 154, 0.888);
+    border: 5px solid rgba(red, green, blue, alpha);
+    border-radius: 3px;
+  }
+         *{
+    box-sizing: border-box;
+ }
+ 
+header{
+    margin-top: 0%;
+}
+.container_header{
+    text-align: center;
+    font-size: 32px;
+    color: rgb(94, 5, 106);
+    background-color:rgb(157, 228, 191);
+    height: 80px;
+    border:5px solid black;
+    border-radius: 5px;
+    
+}
+.container_regForm{
+    
+    background-color: rgba(60, 214, 98, 0.185);
+    height: 70vh;
+    width: 40vw;
+    text-align: center;
+    padding-top: 10vh;
+    margin-top: 40vh;
+    margin-left:35vh;
+    border-radius: 10px;
+    border: 3px solid black;
+    border-style: groove;
+    position: relative;
+}
+input{
+    height: 30px;
+    width: 75%;
+    background-color: azure;
+    font-size: 20px;
+    border-color:2px solid black ;
+    border-radius: 5px;
+    margin-top: 0px;
+}
+.container_header{
+    border-top:  solid #000;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 0%;
+    border-radius: 5px;
+    color: green;
+    
+}
+p{
+    text-align: left;
+    font-size: 24px;
+    padding-left: 50px;
+
+}
+.container{
+    padding-left: 0px;
+    background-color: #fff;
+    height: 150px;
+    width:auto;
+
+}
+#toplinks{
+    border-style:solid;
+    background-color:black;
+    padding-left: 5%;
+    margin-top: 0px;
+    border-radius: 5px;
+    padding-bottom:-30px;
+}
+.container_header button{
+    border-top:  solid #000;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 5%;
+    border-radius: 5px;
+    color: green;
+    padding-top: 10px;
+    margin-top: 20px;
+}
+.btn{
+    width:10%;
+    text-align: center;
+    margin-top: 0px;
+    
+}
+#submit{
+    margin-top: 10%;
+    width: 25%;
+    border-radius: 5px;
+    background-color: rgb(37, 195, 37);
+}
+ul li {
+    float: left;
+    display: flex;
+    padding-left: 30px;
+    margin-left: 35px;
+    margin-top: 10px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+  }
+
+  li a {
+    color: white;
+    text-decoration: none;
+  }
+
+  li a:hover {
+    color: rgb(38, 182, 182);
+    font-family: Arial;
+    font-weight: bold;
+    
+  }
+  .form{
+    height: 50vh;
+    width: 60vw;
+    border: 5px solid black;
+    border-radius: 4px;
+    margin-top: 10vh;
+    margin-left: 20vw;
+  }
+  input{
+   width: 25vw;
+    height: 5vh;
+    border-radius: 8px;
+    border: 3px solid black;
+    font-size: 18px;
+    padding-left: 8px;
+    color: black;
+    padding-top: 5px;
+  }
+  p{
+    font-size: 20px;
+    margin-left: 20px;
+    font: bold;
+  }
+  #Forget_Password{
+    margin-left: 3vw;
+  }
+ h1{
+   
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+#btn{
+  background-color: rgb(29, 119, 149);
+  margin-left: 8vw;
+  width:5vw;
+}
+.form_container{
+  height: 55vh;
+  width: 35vw;
+  border: 2px solid black;
+  margin-left:35%;
+  margin-top:5%;
+  padding-left:4vw;
+  border-radius: 2%;
+}
+
+
+</style>
+<header style="list-style: none;">
+ <div class="main">
+    <div class="navbar">
+      <div class="icon">
+
+        <img
+          src="https://cdn.pixabay.com/photo/2013/07/13/09/48/blood-156063__480.png"
+          alt="LOGO"
+          style="height: 80px; width:80px; border:2px solid white; border-radius:60%; margin:0px 10px 20px 10px ;">
+
+        <h2 style="margin-left: 25px; color: #961e1b;">Blood Bank Management</h2>
+         <div class="topnav" style="margin-left: 25vw; padding:20px; font-size:20px; font-family:Arial, Helvetica, sans-serif;color:white;float:left;">
+          <a href="/">Home</a>
+          <a href="/dashboard">Dashboard</a>
+          <a href="/contact_us">Contact</a>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<body>
+  <div class="form_container">
+  <form class="form-donorlogin" action="/donor_login" method="POST">
+      <h1>DONOR LOG-IN</h1><br><br>
+      <label style="font-size: 20px;">Login-Id</label><br><input id="username" type="email" placeholder="E-mail" name="email" required><br><br>
+
+      <label style="font-size: 20px;">Password</label><br><input id="password" type="password" placeholder="Password" name="password" required><br><br>
+      <input id="btn" type="submit" placeholder="Login"><br><br>
+      <a id="Forget_Password"style="text-decoration: none;color:black; margin-left:10vw;" href="/forget" >Forget Password?</a>
+  
+  </form>
+  </div>
+  <br><br><br>
+  <div class="col-sm-6" style="margin-left:18vw">
+    <table class="table table-responsive table-bordered "
+      style="border: 3px solid black;margin-right:15vh; width: 65vw;">
+      <tbody style="border: 3px solid black; background-color: aliceblue;">
+        <tr>
+          <th colspan="3" style="color:white;background-color:red;">Compatible Blood Type Donors</th>
+        </tr>
+        <tr>
+          <td><b>Blood Type</b></td>
+          <td><b>Donate Blood To</b></td>
+          <td><b>Receive Blood From</b></td>
+        </tr>
+        <tr>
+          <td><span style="color: #961e1b;"><b>A+</b></span></td>
+          <td>A+ AB+</td>
+          <td>A+ A- O+ O-</td>
+        </tr>
+        <tr>
+          <td><span style="color: #961e1b;"><b>O+</b></span></td>
+          <td>O+ A+ B+ AB+</td>
+          <td>O+ O-</td>
+        </tr>
+        <tr>
+          <td><span style="color: #961e1b;"><b>B+</b></span></td>
+          <td>B+ AB+</td>
+          <td>B+ B- O+ O-</td>
+        </tr>
+        <tr>
+          <td><span style="color: #961e1b;"><b>AB+</b></span></td>
+          <td>AB+</td>
+          <td>Everyone</td>
+        </tr>
+        <tr>
+          <td><span style="color: #961e1b;"><b>A-</b></span></td>
+          <td>A+ A- AB+ AB-</td>
+          <td>A- O-</td>
+        </tr>
+        <tr>
+          <td><span style="color: #961e1b;"><b>O-</b></span></td>
+          <td>Everyone</td>
+          <td>O-</td>
+        </tr>
+        <tr>
+          <td><span style="color: #961e1b;"><b>B-</b></span></td>
+          <td>B+ B- AB+ AB-</td>
+          <td>B- O-</td>
+        </tr>
+        <tr>
+          <td><span style="color: #961e1b;"><b>AB-</b></span></td>
+          <td>AB+ AB-</td>
+          <td>AB- A- B- O-</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  </div>
+</body>
+</html>

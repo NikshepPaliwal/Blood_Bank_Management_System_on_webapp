@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <style>
+    .sidenav {
+      height: 90%;
+      width: 200px;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      padding-top: 5vh;
+      padding-left: 10px;
+
+       
+    }
+
+    /* Style the sidenav links and the dropdown button */
+    .sidenav a,
+    .dropdown-btn {
+      padding: 10px 10px 10px 22px;
+      text-decoration: none;
+      font-size: 20px;
+      color: #818181;
+      display: block;
+      border: none;
+      background: none;
+      width: 100%;
+      text-align: left;
+      cursor: pointer;
+      outline: none;
+    }
+
+    /* On mouse-over */
+    .sidenav a:hover,
+    .dropdown-btn:hover {
+      color: #f1f1f1;
+    }
+
+    /* Main content */
+    .main {
+      margin-left: 200px;
+      /* Same as the width of the sidenav */
+      font-size: 20px;
+      /* Increased text to enable scrolling */
+      padding: 0px 10px;
+    }
+
+    /* Add an active class to the active dropdown button */
+    .active {
+      background-color: green;
+      color: white;
+    }
+
+    /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+    .dropdown-container {
+      display: none;
+      background-color: #262626;
+      padding-left: 8px;
+    }
+
+    /* Optional: Style the caret down icon */
+    .fa-caret-down {
+      float: right;
+      padding-right: 8px;
+    }
+
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 80%;
+      margin-left: 18%;
+      margin-top: 5%;
+    }
+   
+    h2 {
+        margin-top: 5%;
+        margin-left: 5%;
+        text-align: center;
+    }
+h1{
+  margin-left: 30%;
+}
+    td,
+    th {
+      border: 1px solid #dddddd;
+      text-align: center;
+      padding: 8px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #b6b2b2e2;
+    }
+   
+  </style>
+
+</head>
+
+<body>
+  
+     
+  
+  <div class="container">
+    
+    <div class="sidenav">
+      <img src="https://cdn.pixabay.com/photo/2013/07/13/09/48/blood-156063__480.png" alt="LOGO"
+      style="height: 150px; width:150px; border:2px solid white; border-radius:60%; margin:0px 0px 30px 10px ; ">
+      <a href="/dashboard">Dashboard</a>
+      <a href="/">About</a>
+      <button class="dropdown-btn">Donor
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-container">
+        <a href="/user_reg">Registration</a>
+        <a href="/donor_login">Login</a>
+        <a href="/blood_seeker">Make Request For Blood</a>
+      </div>
+   
+
+      <button class="dropdown-btn">Admin
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-container">
+        <a href="admin_page">Login</a>
+        <a href="admin_registration">Registration</a>
+        <a href="add_donor_by_admin">Add Donor</a>
+      </div>
+      <a href="/contact_us">Contact</a>
+    </div>
+      
+  </div>
+
+
+  
+<div class="beta" style="height: 8vh;width:60vw;margin-left:20vw; color:brown">
+  <h1>Blood Bank Management System</h1>
+  
+</div>
+   <h2>Registered Donor</h2>
+
+  <table>
+    <tr>
+      
+      <th>Name</th>
+      <th>Contact</th>
+      <th>Blood Group</th>
+      <!-- <th>DOB</th> -->
+    </tr>
+     <%x.forEach((y)=>{%>
+    <tr>
+     
+      <td><%=y.fullname%></td>
+      <td><%=y.contact%></td>
+      <td><%=y.bloodgroup%></td>
+      <!-- <td>
+        <%=y.dob%>
+      </td> -->
+    </tr>
+    <p>Nmae: <%y.fullname%></p>
+      <%})%>
+    </tr>
+  </table>
+ <!-- <%x.forEach((y)=>{%>
+ 
+<%})%> -->
+</body>
+<script>
+  var dropdown = document.getElementsByClassName("dropdown-btn");
+  var i;
+
+  for (i = 0; i < dropdown.length; i++) {
+    dropdown[i].addEventListener("click", function () {
+      this.classList.toggle("active");
+      var dropdownContent = this.nextElementSibling;
+      if (dropdownContent.style.display === "block") {
+        dropdownContent.style.display = "none";
+      } else {
+        dropdownContent.style.display = "block";
+      }
+    });
+  }</script>
+
+</html>

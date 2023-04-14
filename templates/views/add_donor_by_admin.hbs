@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Donor</title>
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/add_donor_by_admin.css">
+</head>
+<header>
+   <div class="main">
+    <div class="navbar">
+      <div class="icon" >
+
+        <img
+          src="https://cdn.pixabay.com/photo/2013/07/13/09/48/blood-156063__480.png"
+          alt="LOGO"
+          style="height: 80px; width:80px; border:2px solid white; border-radius:60%; margin:0px 10px 20px 10px ;">
+
+        <h1 style="margin-left: 25px; margin-top:40px; color: #961e1b;">Blood Bank Management</h1>
+        <div class="topnav" style="margin-left: 25vw; padding:20px; font-size:20px; font-family:Arial, Helvetica, sans-serif;color:white;float:left;">
+          <a href="/">Home</a>
+          <a href="/dashboard">Dashboard</a>
+          <a href="/contact_us">Contact</a>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<body>
+    <div class="container">
+         <form class="regform" action="/add_donor_by_admin" method="POST">
+        <div class="container" id="body_1">
+            <h1 id="alpha">Registration By Admin</h1>
+            <p class="para">Enter Your First Name:</p>
+            <input type="text" value="" placeholder="Name" required name="fullname">
+           
+            <p class="para">Date of Birth</p>
+            <input type="date" placeholder="DD/MM/YYYY" name="dob" required>
+            <p class="para" id="address">Address</p>
+            <input type="text" id="Add" value="" placeholder="Address"  name="firstline"><br>
+            
+            {{!-- <input type="text" id="Add" value="" placeholder="Third Line"  name="thirdline" required><br> --}}
+            <p class="para"> Enter your Pin Code</p>
+            <input type="text" value="" placeholder="Pin Code"  name="pin" required>
+            <p class="para">Contact</p>
+            <input type="tel" value="" placeholder="Contact"  name="contact" required>
+            <p class="para">Gender</p>
+            <select name="gender">
+                <optgroup label="Gender">
+                    <option value="select">select</option>
+                    <option value="Male" name="gender">Male</option>
+                    <option value="Female" name="gender">Female</option>
+                    <option value="Transgender" name="gender">TransGender</option>
+                </optgroup>
+            </select>
+             <p class="para">Blood Group</p>
+            <select name="bloodgroup"> 
+                <optgroup label="Blood Group">
+                    <option value="select">select</option>
+                    <option value="A+" name="bloodgroup">A+</option>
+                    <option value="A-" name="bloodgroup">A-</option>
+                    <option value="AB+" name="bloodgroup">AB+</option>
+                    <option value="AB-" name="bloodgroup">AB-</option>
+                    <option value="B+" name="bloodgroup">B+</option>
+                    <option value="B-" name="bloodgroup">B-</option>
+                    <option value="O+" name="bloodgroup">O+</option>
+                    <option value="O-" name="bloodgroup">O-</option>
+                </optgroup>
+            </select>
+            <p class="para">Email</p>
+            <input type="email" placeholder="E-mail"  name="email" required>
+            <p class="para">Create Password</p>
+            <input type="password" placeholder="Password"  name="password" required>
+            <input id="btn" type="submit" value="Registration">
+    </form>
+    </div>
+</body>
+</html>
